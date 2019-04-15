@@ -5,9 +5,9 @@ task default: %i[jupyter]
 task jupyter: ['jupyter:tests']
 
 namespace :jupyter do
-  task tests: [:jupyter]
+  task tests: [:test_jupyter]
 
-  task :test_jupter do
+  task :test_jupyter do
     jupyter_tests_file = File.join(__dir__, 'jupyter/tc_jupyter.rb')
     ruby Shellwords.escape(jupyter_tests_file)
   end
