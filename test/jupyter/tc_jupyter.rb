@@ -4,7 +4,7 @@ require 'minitest/autorun'
 require_relative '../lib/test_setup'
 
 JUPYTER_COMMAND = 'jupyter notebook --no-browser'.freeze
-JUPYTER_HTML_TITLE = 'HOME'.freeze
+JUPYTER_HTML_TITLE = 'Home'.freeze
 
 # Test server
 class TestServer < Minitest::Test
