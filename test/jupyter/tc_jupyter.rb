@@ -1,12 +1,9 @@
 #!/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby
 
 require 'minitest/autorun'
-require_relative '../../bundle/bundler/setup'
-require_relative 'lib/test_setup'
-require Repla::Test::LOG_HELPER_FILE
+require_relative '../lib/test_setup'
 
-SERVER_BUNDLE_COMMAND = 'repla server'
-JUPYTER_COMMAND = 'jupyter notebook --no-browser'
+JUPYTER_COMMAND = 'jupyter notebook --no-browser'.freeze
 
 # Test server
 class TestServer < Minitest::Test
