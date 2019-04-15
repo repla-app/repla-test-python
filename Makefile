@@ -10,4 +10,10 @@ autocorrect:
 	rubocop -a
 
 test:
-	run_tests.sh
+	./test/run_tests.sh
+
+bundle_update:
+	cd ./test/ &&\
+		bundle update &&\
+		bundle clean &&\
+		bundle install --standalone
