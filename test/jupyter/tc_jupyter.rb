@@ -4,6 +4,7 @@ require 'minitest/autorun'
 require_relative '../lib/test_setup'
 
 JUPYTER_COMMAND = 'jupyter notebook --no-browser'.freeze
+JUPYTER_HTML_TITLE = 'HOME'.freeze
 
 # Test server
 class TestServer < Minitest::Test
@@ -23,12 +24,12 @@ class TestServer < Minitest::Test
   end
 
   def test_jupyter
-    # javascript = File.read(Repla::Test::TITLE_JAVASCRIPT_FILE)
-    # result = nil
-    # Repla::Test.block_until do
-    #   result = @window.do_javascript(javascript)
-    #   result == Repla::Test::INDEX_HTML_TITLE
-    # end
-    # assert_equal(Repla::Test::INDEX_HTML_TITLE, result)
+    javascript = File.read(Repla::Test::TITLE_JAVASCRIPT_FILE)
+    result = nil
+    Repla::Test.block_until do
+      result = @window.do_javascript(javascript)
+      result == JUPYTER_HTML_TITLE
+    end
+    assert_equal(JUPYTER_HTML_TITLE, result)
   end
 end
