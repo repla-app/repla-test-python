@@ -8,7 +8,7 @@ JUPYTER_COMMAND = 'jupyter notebook --no-browser'.freeze
 # Test server
 class TestServer < Minitest::Test
   def setup
-    `$SERVER_BUNDLE_COMMAND "$JUPYTER_COMMAND"`
+    `${SERVER_BUNDLE_COMMAND} "${JUPYTER_COMMAND}"`
     window_id = nil
     Repla::Test.block_until do
       window_id = Repla::Test::Helper.window_id
