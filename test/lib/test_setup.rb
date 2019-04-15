@@ -1,4 +1,5 @@
 require_relative '../bundle/bundler/setup'
+require 'repla'
 require 'repla/test'
 require Repla::Test::HELPER_FILE
 
