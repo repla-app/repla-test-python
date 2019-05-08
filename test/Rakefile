@@ -1,14 +1,14 @@
 require 'shellwords'
 
-task default: %i[jupyter]
+task default: %i[python]
 
-task jupyter: ['jupyter:tests']
+task python: ['python:tests']
 
-namespace :jupyter do
+namespace :python do
   task tests: [:test_jupyter]
 
   task :test_jupyter do
-    jupyter_tests_file = File.join(__dir__, 'jupyter/tc_jupyter.rb')
+    jupyter_tests_file = File.join(__dir__, 'tc_jupyter.rb')
     ruby Shellwords.escape(jupyter_tests_file)
   end
 end

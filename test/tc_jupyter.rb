@@ -1,7 +1,7 @@
 #!/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby
 
 require 'minitest/autorun'
-require_relative '../lib/test_setup'
+require_relative 'lib/test_setup'
 
 JUPYTER_COMMAND = 'jupyter notebook --no-browser'.freeze
 JUPYTER_HTML_TITLE = 'Home'.freeze
