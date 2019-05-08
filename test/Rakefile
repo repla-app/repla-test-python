@@ -5,10 +5,15 @@ task default: %i[python]
 task python: ['python:tests']
 
 namespace :python do
-  task tests: [:test_jupyter]
+  task tests: %i[test_jupyter test_django]
 
   task :test_jupyter do
     jupyter_tests_file = File.join(__dir__, 'tc_jupyter.rb')
     ruby Shellwords.escape(jupyter_tests_file)
+  end
+
+  task :test_django do
+    django_tests_file = File.join(__dir__, 'tc_django.rb')
+    ruby Shellwords.escape(django_tests_file)
   end
 end
