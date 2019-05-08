@@ -1,0 +1,3 @@
+[submodule "external/repla-test-django"]
+	path = external/repla-test-django
+	url = https://github.com/repla-app/repla-test-django.git
