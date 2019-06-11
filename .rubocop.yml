@@ -25,4 +25,7 @@ AllCops:
     - '**/node_modules/**/*'
     - '**/vendor/**/*'
     - '**/bundle/**/*'
-
+Metrics/LineLength:
+  Exclude:
+    - 'test/tc_jupyter.rb'
+    - 'test/tc_django.rb'
