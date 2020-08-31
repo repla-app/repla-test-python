@@ -3,7 +3,7 @@
 require 'minitest/autorun'
 require_relative 'lib/test_setup'
 
-JUPYTER_HTML_TITLE = 'Home'.freeze
+JUPYTER_HTML_TITLE = 'Home Page - Select or create a notebook'.freeze
 
 # Test server
 class TestJupyter < Minitest::Test
