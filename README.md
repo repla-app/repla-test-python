@@ -1,1 +1,1 @@
-# Repla Test Python [![Build Status](https://travis-ci.org/repla-app/repla-test-python.svg?branch=master)](https://travis-ci.org/repla-app/repla-test-python)
+# Repla Test Python ![Status](https://github.com/repla-app/repla-test-python/actions/workflows/ci.yml/badge.svg)
