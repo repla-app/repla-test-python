@@ -9,7 +9,7 @@ class TestServer < Minitest::Test
     File.join(__dir__, '../external/repla-test-django/')
   )
   EXTERNAL_COMMAND = 'python3 manage.py runserver'.freeze
-  HTML_TITLE = 'Django: the Web framework for perfectionists with deadlines.'
+  HTML_TITLE = 'The install worked successfully! Congratulations!'
                .freeze
 
   def setup
